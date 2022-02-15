@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		78B5A03127BBD4DD00D26903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A03027BBD4DD00D26903 /* AppDelegate.swift */; };
 		78B5A03327BBD4DD00D26903 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A03227BBD4DD00D26903 /* SceneDelegate.swift */; };
-		78B5A03527BBD4DD00D26903 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A03427BBD4DD00D26903 /* RootViewController.swift */; };
+		78B5A03527BBD4DD00D26903 /* BitDiffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A03427BBD4DD00D26903 /* BitDiffViewController.swift */; };
 		78B5A03A27BBD4DF00D26903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B5A03927BBD4DF00D26903 /* Assets.xcassets */; };
 		78B5A03D27BBD4DF00D26903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B5A03B27BBD4DF00D26903 /* LaunchScreen.storyboard */; };
-		78B5A04827BBD4DF00D26903 /* LegendaryOctoCouscousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A04727BBD4DF00D26903 /* LegendaryOctoCouscousTests.swift */; };
 		78B5A05227BBD4DF00D26903 /* LegendaryOctoCouscousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A05127BBD4DF00D26903 /* LegendaryOctoCouscousUITests.swift */; };
-		78B5A05427BBD4DF00D26903 /* LegendaryOctoCouscousUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A05327BBD4DF00D26903 /* LegendaryOctoCouscousUITestsLaunchTests.swift */; };
-		78B5A06327BBDE4500D26903 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A06227BBDE4500D26903 /* RootView.swift */; };
+		78B5A06327BBDE4500D26903 /* BitDiffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A06227BBDE4500D26903 /* BitDiffView.swift */; };
+		78B5A06527BBE8E500D26903 /* BitDiffViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A06427BBE8E500D26903 /* BitDiffViewModel.swift */; };
+		78B5A06727BBF7DA00D26903 /* DifferingBitsCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A06627BBF7DA00D26903 /* DifferingBitsCounter.swift */; };
+		78B5A06927BC277900D26903 /* DifferingBitsCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A06827BC277900D26903 /* DifferingBitsCounterTests.swift */; };
+		78B5A06D27BC2E2F00D26903 /* BitDiffViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A06C27BC2E2F00D26903 /* BitDiffViewFactory.swift */; };
+		78B5A06F27BC30D000D26903 /* BitDiffViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A06E27BC30D000D26903 /* BitDiffViewModelTests.swift */; };
+		78B5A07127BC340200D26903 /* BitDiffResultFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A07027BC340200D26903 /* BitDiffResultFormatter.swift */; };
+		78B5A07227BC361500D26903 /* BitDiffResultFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A07027BC340200D26903 /* BitDiffResultFormatter.swift */; };
+		78B5A07427BC367300D26903 /* BitDiffViewAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A07327BC367300D26903 /* BitDiffViewAccessibility.swift */; };
+		78B5A07527BC36D100D26903 /* BitDiffViewAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A07327BC367300D26903 /* BitDiffViewAccessibility.swift */; };
+		78B5A07727BC39B100D26903 /* BitDiffViewErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A07627BC39B100D26903 /* BitDiffViewErrorMessages.swift */; };
+		78B5A07827BC39EC00D26903 /* BitDiffViewErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5A07627BC39B100D26903 /* BitDiffViewErrorMessages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,18 +48,24 @@
 		78B5A02D27BBD4DD00D26903 /* LegendaryOctoCouscous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegendaryOctoCouscous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B5A03027BBD4DD00D26903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78B5A03227BBD4DD00D26903 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78B5A03427BBD4DD00D26903 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		78B5A03427BBD4DD00D26903 /* BitDiffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitDiffViewController.swift; sourceTree = "<group>"; };
 		78B5A03927BBD4DF00D26903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78B5A03C27BBD4DF00D26903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78B5A03E27BBD4DF00D26903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78B5A04327BBD4DF00D26903 /* LegendaryOctoCouscousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegendaryOctoCouscousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78B5A04727BBD4DF00D26903 /* LegendaryOctoCouscousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendaryOctoCouscousTests.swift; sourceTree = "<group>"; };
 		78B5A04D27BBD4DF00D26903 /* LegendaryOctoCouscousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegendaryOctoCouscousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B5A05127BBD4DF00D26903 /* LegendaryOctoCouscousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendaryOctoCouscousUITests.swift; sourceTree = "<group>"; };
-		78B5A05327BBD4DF00D26903 /* LegendaryOctoCouscousUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendaryOctoCouscousUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		78B5A06027BBD4F700D26903 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		78B5A06127BBD4F700D26903 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		78B5A06227BBDE4500D26903 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		78B5A06227BBDE4500D26903 /* BitDiffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitDiffView.swift; sourceTree = "<group>"; };
+		78B5A06427BBE8E500D26903 /* BitDiffViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitDiffViewModel.swift; sourceTree = "<group>"; };
+		78B5A06627BBF7DA00D26903 /* DifferingBitsCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferingBitsCounter.swift; sourceTree = "<group>"; };
+		78B5A06827BC277900D26903 /* DifferingBitsCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferingBitsCounterTests.swift; sourceTree = "<group>"; };
+		78B5A06C27BC2E2F00D26903 /* BitDiffViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitDiffViewFactory.swift; sourceTree = "<group>"; };
+		78B5A06E27BC30D000D26903 /* BitDiffViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitDiffViewModelTests.swift; sourceTree = "<group>"; };
+		78B5A07027BC340200D26903 /* BitDiffResultFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitDiffResultFormatter.swift; sourceTree = "<group>"; };
+		78B5A07327BC367300D26903 /* BitDiffViewAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitDiffViewAccessibility.swift; sourceTree = "<group>"; };
+		78B5A07627BC39B100D26903 /* BitDiffViewErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitDiffViewErrorMessages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +120,8 @@
 			children = (
 				78B5A03027BBD4DD00D26903 /* AppDelegate.swift */,
 				78B5A03227BBD4DD00D26903 /* SceneDelegate.swift */,
-				78B5A03427BBD4DD00D26903 /* RootViewController.swift */,
-				78B5A06227BBDE4500D26903 /* RootView.swift */,
+				78B5A06A27BC2DEC00D26903 /* BitDiffView */,
+				78B5A06B27BC2DF900D26903 /* Utilities */,
 				78B5A03927BBD4DF00D26903 /* Assets.xcassets */,
 				78B5A03B27BBD4DF00D26903 /* LaunchScreen.storyboard */,
 				78B5A03E27BBD4DF00D26903 /* Info.plist */,
@@ -117,7 +132,8 @@
 		78B5A04627BBD4DF00D26903 /* LegendaryOctoCouscousTests */ = {
 			isa = PBXGroup;
 			children = (
-				78B5A04727BBD4DF00D26903 /* LegendaryOctoCouscousTests.swift */,
+				78B5A06827BC277900D26903 /* DifferingBitsCounterTests.swift */,
+				78B5A06E27BC30D000D26903 /* BitDiffViewModelTests.swift */,
 			);
 			path = LegendaryOctoCouscousTests;
 			sourceTree = "<group>";
@@ -126,9 +142,30 @@
 			isa = PBXGroup;
 			children = (
 				78B5A05127BBD4DF00D26903 /* LegendaryOctoCouscousUITests.swift */,
-				78B5A05327BBD4DF00D26903 /* LegendaryOctoCouscousUITestsLaunchTests.swift */,
 			);
 			path = LegendaryOctoCouscousUITests;
+			sourceTree = "<group>";
+		};
+		78B5A06A27BC2DEC00D26903 /* BitDiffView */ = {
+			isa = PBXGroup;
+			children = (
+				78B5A06227BBDE4500D26903 /* BitDiffView.swift */,
+				78B5A07327BC367300D26903 /* BitDiffViewAccessibility.swift */,
+				78B5A03427BBD4DD00D26903 /* BitDiffViewController.swift */,
+				78B5A07627BC39B100D26903 /* BitDiffViewErrorMessages.swift */,
+				78B5A06C27BC2E2F00D26903 /* BitDiffViewFactory.swift */,
+				78B5A06427BBE8E500D26903 /* BitDiffViewModel.swift */,
+			);
+			path = BitDiffView;
+			sourceTree = "<group>";
+		};
+		78B5A06B27BC2DF900D26903 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				78B5A07027BC340200D26903 /* BitDiffResultFormatter.swift */,
+				78B5A06627BBF7DA00D26903 /* DifferingBitsCounter.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +299,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78B5A06327BBDE4500D26903 /* RootView.swift in Sources */,
-				78B5A03527BBD4DD00D26903 /* RootViewController.swift in Sources */,
+				78B5A06D27BC2E2F00D26903 /* BitDiffViewFactory.swift in Sources */,
+				78B5A06527BBE8E500D26903 /* BitDiffViewModel.swift in Sources */,
+				78B5A07127BC340200D26903 /* BitDiffResultFormatter.swift in Sources */,
+				78B5A06327BBDE4500D26903 /* BitDiffView.swift in Sources */,
+				78B5A06727BBF7DA00D26903 /* DifferingBitsCounter.swift in Sources */,
+				78B5A03527BBD4DD00D26903 /* BitDiffViewController.swift in Sources */,
+				78B5A07427BC367300D26903 /* BitDiffViewAccessibility.swift in Sources */,
 				78B5A03127BBD4DD00D26903 /* AppDelegate.swift in Sources */,
+				78B5A07727BC39B100D26903 /* BitDiffViewErrorMessages.swift in Sources */,
 				78B5A03327BBD4DD00D26903 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +316,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78B5A04827BBD4DF00D26903 /* LegendaryOctoCouscousTests.swift in Sources */,
+				78B5A06927BC277900D26903 /* DifferingBitsCounterTests.swift in Sources */,
+				78B5A06F27BC30D000D26903 /* BitDiffViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B5A07527BC36D100D26903 /* BitDiffViewAccessibility.swift in Sources */,
+				78B5A07227BC361500D26903 /* BitDiffResultFormatter.swift in Sources */,
+				78B5A07827BC39EC00D26903 /* BitDiffViewErrorMessages.swift in Sources */,
 				78B5A05227BBD4DF00D26903 /* LegendaryOctoCouscousUITests.swift in Sources */,
-				78B5A05427BBD4DF00D26903 /* LegendaryOctoCouscousUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +488,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,7 +516,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

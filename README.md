@@ -21,3 +21,16 @@ storybaord files will arise and those conflicts are much harder to fix than in t
 I purposefully removed the default storyboard and converted the app to use only code generated
 interfaces.
 
+## Factory
+Not sure if your team use factory pattern, but wanted to introduce it into the project
+
+## UI Testing with formatters and specific text values
+BitDiffViewErrorMessages and BitDifResultFormatter are also imported into the UI test target for ease
+of testing. Should coding guidelines prefer to use pre-formatted static text strings to compare against
+this would definitely be easy to do.
+
+# Licensing
+The code in this repository is available under MIT license except the App Icon files.
+
+App icon provided under limited distribution by Encoded Life Inc - DO NOT USE IN YOUR OWN PROJECTS
+

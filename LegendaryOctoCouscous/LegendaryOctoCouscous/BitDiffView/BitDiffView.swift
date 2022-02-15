@@ -1,5 +1,5 @@
 //
-//  RootView.swift
+//  BitDiffView.swift
 //  LegendaryOctoCouscous
 //
 //  Created by Dave Poirier on 2022-02-15.
@@ -8,7 +8,12 @@
 
 import UIKit
 
-class RootView: UIView {
+protocol BitDiffViewCompatible: UIView {
+    var onCalculate: BitDiffView.CalculateAction? { get set }
+    func setOutcome(_ outcome: String)
+}
+
+class BitDiffView: UIView, BitDiffViewCompatible {
     
     typealias CalculateAction = (String, String) -> Void
     var onCalculate: CalculateAction?
@@ -26,13 +31,17 @@ class RootView: UIView {
     private let numberOfBitsLabel: UILabel = label(for: "")
     private lazy var calculateButton: UIButton = formButton()
     
+    func setOutcome(_ outcome: String) {
+        numberOfBitsLabel.text = outcome
+    }
+    
     private static func numberTextField() -> UITextField {
         let textField = UITextField()
         textField.keyboardType = .numberPad
         textField.autocorrectionType = .no
         textField.textColor = .label
         textField.tintColor = .placeholderText
-        textField.placeholder = "Enter digits…"
+        textField.placeholder = "Unsigned 64-bit integer…"
         return textField
     }
     
@@ -40,6 +49,7 @@ class RootView: UIView {
         let label: UILabel = UILabel()
         label.text = text
         label.textColor = .label
+        label.numberOfLines = 0
         return label
     }
     
@@ -58,11 +68,21 @@ class RootView: UIView {
         onCalculate?(firstDigits, secondDigits)
     }
     
+    private func prepareAccessibilityIdentifiers() {
+        number1TextField.accessibilityIdentifier = BitDiffViewAccessibility.number1TextField.rawValue
+        number2TextField.accessibilityIdentifier = BitDiffViewAccessibility.number2TextField.rawValue
+        calculateButton.accessibilityIdentifier = BitDiffViewAccessibility.calculateButton.rawValue
+        numberOfBitsLabel.accessibilityIdentifier = BitDiffViewAccessibility.numberOfBitsLabel.rawValue
+    }
+    
     private func composeUI() {
+        self.backgroundColor = .systemBackground
+        
         [directivesLabel, number1TextField, number2TextField, calculateButton, numberOfBitsLabel].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             self.addSubview($0)
         }
+        
         NSLayoutConstraint.activate([
             directivesLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: Style.topMargin),
             directivesLabel.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: Style.sideMargins),
@@ -85,6 +105,7 @@ class RootView: UIView {
     override func layoutSubviews() {
         if directivesLabel.superview == nil {
             composeUI()
+            prepareAccessibilityIdentifiers()
         }
         super.layoutSubviews()
     }
