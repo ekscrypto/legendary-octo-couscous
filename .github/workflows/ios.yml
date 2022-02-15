@@ -20,5 +20,5 @@ jobs:
           xcodebuild build-for-testing -scheme "LegendaryOctoCouscous" -destination "platform=iOS Simulator,name=iPhone 13 Pro"
       - name: Test
         run: |
-          cd VerboseOctoMeme
+          cd LegendaryOctoCouscous
           xcodebuild test-without-building -scheme "LegendaryOctoCouscous" -destination "platform=iOS Simulator,name=iPhone 13 Pro" -enableCodeCoverage YES
