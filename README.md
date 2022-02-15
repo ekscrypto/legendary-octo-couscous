@@ -1,3 +1,6 @@
+![iOS workflow](https://github.com/ekscrypto/legendary-octo-couscous/actions/workflows/ios.yml/badge.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Issues](https://img.shields.io/github/issues/ekscrypto/legendary-octo-couscous) ![Releases](https://img.shields.io/github/v/release/ekscrypto/legendary-octo-couscous)
+
+
 # legendary-octo-couscous
 Technical Interview Project
 

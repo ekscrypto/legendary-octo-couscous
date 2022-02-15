@@ -1,0 +1,24 @@
+name: Xcode build and test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build and Test default scheme using any available iPhone simulator
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: |
+          cd LegendaryOctoCouscous
+          xcodebuild build-for-testing -scheme "LegendaryOctoCouscous" -destination "platform=iOS Simulator,name=iPhone 13 Pro"
+      - name: Test
+        run: |
+          cd VerboseOctoMeme
+          xcodebuild test-without-building -scheme "LegendaryOctoCouscous" -destination "platform=iOS Simulator,name=iPhone 13 Pro" -enableCodeCoverage YES
